@@ -1,4 +1,10 @@
-remote_theme: pages-themes/slate@v0.2.0
+# theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
-title: Georgy V. Makarov
+minima:
+  skin: dark # Or auto if you want it to switch with your system settings.
+<!-- in 404.html -->
+---
+permalink: /404.html
+layout: base
