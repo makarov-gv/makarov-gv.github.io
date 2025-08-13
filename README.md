@@ -1,4 +1,4 @@
-Russia, Saint Petersburg | [makarov@ml-researcher.ru](mailto:makarov@ml-researcher.ru) | [Telegram](https://t.me/makarov_gv) | [GitHub](https://github.com/makarov-gv)
+Russia, Saint Petersburg | [makarov@ml-researcher.ru](mailto:makarov@ml-researcher.ru) | [Telegram](https://t.me/makarov_gv) | [GitHub](https://github.com/makarov-gv) | [Hugging Face](https://huggingface.co/makarov-gv)
 
 [Education](#education) | [Experience](#experience) | [Publications](#publications) | [Skills](#skills) | [Personal Qualities](#personal-qualities)
 
@@ -21,7 +21,7 @@ Responsibilities:
 - Configured, tested, and integrated electronic modules into the company’s software ecosystem
 
 Achievements:
-- Contributed to organizing the nationwide competition “Personnel for the Digital Industry. Delivering complete design-and-engineering solutions in the “Cyberdrome 2023” contest format”
+- Contributed to organizing the nationwide competition “Personnel for the Digital Industry. Delivering complete design-and-engineering solutions in the “Cyberdrome 2023” contest format.”
 
 ### Junior ML Engineer — Geoscan Group (Jun 2024 – Feb 2025)
 Software Department
@@ -44,11 +44,11 @@ Responsibilities:
 - Designed algorithms for UAV aerial survey data processing (point‑cloud clustering, real‑time photo georeferencing)
 
 Achievements:
-- Best student report at the XXVII Conference of Young Scientists “Navigation and Motion Control” (with internationl participants), session “AI Technologies in Navigation and Motion Control” — “Detection of Road Obstacles on a Digital Terrain Model”
+- Best student report at the 27th Conference of Young Scientists “Navigation and Motion Control” (with internationl participants), session “AI Technologies in Navigation and Motion Control” — “Detection of Road Obstacles on a Digital Terrain Model”
   
 ## Publications
-- 1
-- 2
+- Under peer-review, preprint: paper “Effective sparse data processing in Vision Transformers”
+- 27th Conference of Young Scientists “Navigation and Motion Control” (with internationl participants) (2025): abstract “Road Obstacle Detection on Digital Elevation Model”
 
 ## Skills
 - Software development primarily in Python (OOP, multithreading, asynchronous programming)
@@ -58,7 +58,8 @@ Achievements:
 - Frameworks/libraries: PyTorch, Transformers, OpenCV, Scikit-Learn, Pandas
 - Proficiency with Linux, Git
 - Knowledge of coding standards and commit message conventions
-- Languages: Russian — native, English — advanced
+
+Languages: Russian — native, English — advanced
 
 ## Personal Qualities
 Motivated to learn and grow; responsible, stress‑resistant, disciplined; strong team player. Aimed at developing academically in computer science and machine learning through journals publications, conferences reports, and further education in this field.
