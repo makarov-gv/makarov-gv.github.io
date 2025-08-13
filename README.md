@@ -1,22 +1,19 @@
 # Georgy V. Makarov
 
-- [Education](#education)
-- [Work Experience](#work-experience)
-  - [Programmer Intern — Geoscan Group](#programmer-intern—geoscan-group-feb-2023–may-2024)
-  - [Junior Programmer — Geoscan Group](#junior-programmer—geoscan-group-jun-2024–feb-2025)
-  - [Software Engineer — Geoscan Group](#software-engineer—geoscan-group-mar-2025–present)
-- [Professional Skills](#professional-skills)
-- [Languages](#languages)
-- [Personal Qualities](#personal-qualities)
+[Email](mailto:makarov@ml-researcher.ru) | [Telegram](https://t.me/makarov_gv) | [GitHub](https://github.com/makarov-gv)
+
+[Education](#education) | [Experience](#experience) | [Skills](#skills) | [Languages](#languages) | [Personal Qualities](#personal-qualities)
+
+---
 
 ## Education
 Peter the Great St. Petersburg Polytechnic University (SPbPU), Institute of Mechanical Engineering, Materials and Transport.  
-Bachelor’s program: Mechatronics and Robotics, track “Autonomous Robots,” 2021 – present.
+Bachelor’s program: Mechatronics and Robotics, track “Autonomous Robots,” 2021–present.
 
-## Work Experience
+## Experience
 
-### Programmer Intern — Geoscan Group (Feb 2023–May 2024)
-Experimental Projects Department.
+### Software Engineering Intern — Geoscan Group (Feb 2023–May 2024)
+Experimental Projects Department
 
 Responsibilities:
 - Developed software in Python and C++, including computer vision and image processing; built minimalist UIs and data‑visualization apps.
@@ -25,11 +22,11 @@ Responsibilities:
 - Configured, tested, and integrated electronic modules into the company’s software ecosystem.
 - Validated use cases for the Pioneer educational drone line and authored explanatory documentation.
 
-Professional achievements:
+Achievements:
 - Contributed to organizing the nationwide competition “Personnel for the Digital Industry,” delivering complete design-and-engineering solutions in the “Cyberdrome 2023” contest format.
 
-### Junior Programmer — Geoscan Group (Jun 2024–Feb 2025)
-Software Department.
+### Junior Software Engineer — Geoscan Group (Jun 2024–Feb 2025)
+Software Department
 
 Responsibilities:
 - Developed and trained ML models (CNNs, transformers) for computer vision tasks in geospatial analytics.
@@ -38,7 +35,7 @@ Responsibilities:
 - Designed algorithms for processing UAV aerial survey data (sensor fusion, point‑cloud georeferencing, image matching).
 
 ### Software Engineer — Geoscan Group (Mar 2025–present)
-Software Department.
+Software Department
 
 Responsibilities:
 - Authored scientific materials related to in‑house projects.
@@ -48,10 +45,10 @@ Responsibilities:
 - Integrated ML models into Geoscan projects and deployed them in online services.
 - Developed algorithms for UAV aerial data processing (point‑cloud clustering, real‑time georeferencing).
 
-Professional achievements:
+Achievements:
 - Best student talk at the XXVII Conference of Young Scientists “Navigation and Motion Control” (international participation), session “AI Technologies in Navigation and Motion Control” — “Detection of Road Obstacles on a Digital Terrain Model.”
 
-## Professional Skills
+## Skills
 - Strong computer proficiency.
 - Linux experience.
 - Software development primarily in Python, including OOP, multithreading, and asynchronous programming.
@@ -63,7 +60,7 @@ Professional achievements:
 - Knowledge of coding standards and commit message conventions.
 
 ## Languages
-- Russian — native
+- Russian — native  
 - English — advanced
 
 ## Personal Qualities
