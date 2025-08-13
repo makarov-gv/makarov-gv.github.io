@@ -15,7 +15,7 @@ Bachelor’s program: Mechatronics and Robotics, Autonomous Robots, 2021 – 202
 Student Design Bureau
 
 Responsibilities:
-- Developed software in Python and C++, including computer vision and image processing
+- Developed software in Python and C++, primarily in computer vision and image processing fields
 - Created AI-based automation tools for Agisoft Metashape photogrammetry software
 - Developed video transmission systems for gimbal-based drone cameras
 - Configured, tested, and integrated electronic modules into the company’s software ecosystem
