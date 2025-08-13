@@ -1,4 +1,4 @@
-Russia, Saint Petersburg | [makarov@ml-researcher.ru](mailto:makarov@ml-researcher.ru) | [Telegram](https://t.me/makarov_gv) | [GitHub](https://github.com/makarov-gv) | [Hugging Face](https://huggingface.co/makarov-gv)
+Russia, Saint Petersburg | makarov@ml-researcher.ru | [Telegram](https://t.me/makarov_gv) | [GitHub](https://github.com/makarov-gv) | [Hugging Face](https://huggingface.co/makarov-gv)
 
 [Education](#education) | [Experience](#experience) | [Publications](#publications) | [Skills](#skills) | [Personal Qualities](#personal-qualities)
 
