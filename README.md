@@ -44,7 +44,7 @@ Responsibilities:
 - Designed algorithms for UAV aerial survey data processing (point‑cloud clustering, real‑time photo georeferencing)
 
 Achievements:
-- Best student report at the 27th Conference of Young Scientists “Navigation and Motion Control” (with internationl participants), session “AI Technologies in Navigation and Motion Control” — “Detection of Road Obstacles on a Digital Terrain Model”
+- Best student report at the 27th Conference of Young Scientists “Navigation and Motion Control” (with international participants), session “AI Technologies in Navigation and Motion Control” — “Detection of Road Obstacles on a Digital Terrain Model”
   
 ## Publications
 - Under peer-review, preprint: paper “Effective sparse data processing in Vision Transformers”
