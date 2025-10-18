@@ -1,7 +1,5 @@
-/* ---- Google Fonts ---- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono&display=swap');
 
-/* ---- General ---- */
 body {
     margin: 0;
     padding: 0;
@@ -22,14 +20,12 @@ a:hover {
     color: #21a1f1;
 }
 
-/* ---- Container ---- */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
-/* ---- Header ---- */
 header {
     display: flex;
     flex-direction: column;
@@ -57,7 +53,6 @@ header p {
     margin: 0.2rem 0;
 }
 
-/* ---- Navigation ---- */
 .nav {
     margin-top: 1rem;
 }
@@ -79,7 +74,6 @@ hr {
     margin: 2rem 0;
 }
 
-/* ---- Sections ---- */
 section {
     margin-bottom: 2.5rem;
     opacity: 0;
@@ -122,12 +116,10 @@ ul {
     color: #bbb;
 }
 
-/* ---- Skills ---- */
 .skills {
     font-family: 'Roboto Mono', monospace;
 }
 
-/* ---- Responsive ---- */
 @media(max-width: 600px) {
     header img {
         width: 120px;
