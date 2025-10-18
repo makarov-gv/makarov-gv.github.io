@@ -29,18 +29,17 @@
 
         <hr>
 
-        <section id="education">
+        <section id="education" class="fade-in">
             <h2>Education</h2>
-            <p><strong>Peter the Great St. Petersburg Polytechnic University, Institute of Machinery, Materials, and Transport</strong></p>
+            <p><strong>Peter the Great St. Petersburg Polytechnic University (SPbPU), Institute of Machinery, Materials, and Transport</strong></p>
             <p>Bachelor’s program: <em>Mechatronics and Robotics, Autonomous Robots</em> (2021 – 2025)</p>
-            
-            <p><strong>Higher School of Economics — Saint Petersburg, School of Computer Science, Physics and Technology</strong></p>
-            <p>Masters’s program: <em>Machine Learning and Data Analysis</em> (2025 – present)</p>
+        
+            <p><strong>Higher School of Economics — St. Petersburg, School of Computer Science, Physics and Technology</strong></p>
+            <p>Master’s program: <em>Machine Learning and Data Analysis</em> (2025 – present)</p>
         </section>
 
-        <section id="experience">
+        <section id="experience" class="fade-in">
             <h2>Experience</h2>
-
             <h3>Software Engineering Intern — Geoscan Group <span class="job-period">(Feb 2023 – May 2024)</span></h3>
             <p><strong>Student Design Bureau</strong></p>
             <ul>
@@ -73,7 +72,7 @@
             <p class="achievements">Best student report at the 27th Conference of Young Scientists “Navigation and Motion Control” — “Detection of Road Obstacles on a Digital Terrain Model”</p>
         </section>
 
-        <section id="publications">
+        <section id="publications" class="fade-in">
             <h2>Publications</h2>
             <ul>
                 <li>Under peer review: “Effective Sparse Data Processing in Vision Transformers”</li>
@@ -81,7 +80,7 @@
             </ul>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="fade-in">
             <h2>Skills</h2>
             <ul class="skills">
                 <li>Python (OOP, multithreading, async programming)</li>
@@ -92,11 +91,38 @@
             </ul>
         </section>
 
-        <section id="qualities">
+        <section id="qualities" class="fade-in">
             <h2>Personal Qualities</h2>
             <p>Motivated to learn and grow; responsible, stress-resistant, disciplined; strong team player.  
             Aimed at developing academically in computer science and machine learning through journal publications, conference reports, and further education.</p>
         </section>
     </div>
+
+    <script>
+        const sections = document.querySelectorAll('.fade-in');
+        const navLinks = document.querySelectorAll('.nav a');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        sections.forEach(section => observer.observe(section));
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
