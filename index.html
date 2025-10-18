@@ -6,30 +6,31 @@
     <title>Georgy Makarov</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <img src="assets/profile.jpg" alt="Georgy Makarov">
-            <h1>Georgy Makarov</h1>
-            <p>Russia, Saint Petersburg</p>
-            <p>📧 makarov@ml-researcher.ru</p>
-            <p>
-                <a href="https://t.me/makarov_gv">Telegram</a> | 
-                <a href="https://github.com/makarov-gv">GitHub</a> | 
-                <a href="https://huggingface.co/makarov-gv">Hugging Face</a>
-            </p>
-            <div class="nav">
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#publications">Publications</a>
-                <a href="#skills">Skills</a>
-                <a href="#qualities">Personal Qualities</a>
-            </div>
-        </header>
+<body id="top">
+    <div class="social-sidebar">
+        <a href="https://github.com/makarov-gv" target="_blank">GitHub</a>
+        <a href="https://t.me/makarov_gv" target="_blank">Telegram</a>
+        <a href="https://huggingface.co/makarov-gv" target="_blank">Hugging Face</a>
+    </div>
 
-        <hr>
+    <header>
+        <img src="assets/profile.jpg" alt="Georgy Makarov">
+        <h1 class="typing">Georgy Makarov</h1>
+        <p>Russia, Saint Petersburg</p>
+        <p>📧 makarov@ml-researcher.ru</p>
+        <div class="nav">
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#publications">Publications</a>
+            <a href="#skills">Skills</a>
+            <a href="#qualities">Personal Qualities</a>
+        </div>
+    </header>
 
-        <section id="education" class="fade-in section-hover">
+    <hr>
+
+    <main class="scroll-container">
+        <section id="education" class="section">
             <h2>Education</h2>
             <p><strong>Peter the Great St. Petersburg Polytechnic University (SPbPU), Institute of Machinery, Materials, and Transport</strong></p>
             <p>Bachelor’s program: <em>Mechatronics and Robotics, Autonomous Robots</em> (2021 – 2025)</p>
@@ -38,7 +39,7 @@
             <p>Master’s program: <em>Machine Learning and Data Analysis</em> (2025 – present)</p>
         </section>
 
-        <section id="experience" class="fade-in section-hover">
+        <section id="experience" class="section">
             <h2>Experience</h2>
             <h3>Software Engineering Intern — Geoscan Group <span class="job-period">(Feb 2023 – May 2024)</span></h3>
             <p><strong>Student Design Bureau</strong></p>
@@ -72,7 +73,7 @@
             <p class="achievements">Best student report at the 27th Conference of Young Scientists “Navigation and Motion Control” — “Detection of Road Obstacles on a Digital Terrain Model”</p>
         </section>
 
-        <section id="publications" class="fade-in section-hover">
+        <section id="publications" class="section">
             <h2>Publications</h2>
             <ul>
                 <li>Under peer review: “Effective Sparse Data Processing in Vision Transformers”</li>
@@ -80,7 +81,7 @@
             </ul>
         </section>
 
-        <section id="skills" class="fade-in section-hover">
+        <section id="skills" class="section">
             <h2>Skills</h2>
             <ul class="skills">
                 <li>Python (OOP, multithreading, async programming)</li>
@@ -91,38 +92,13 @@
             </ul>
         </section>
 
-        <section id="qualities" class="fade-in section-hover">
+        <section id="qualities" class="section">
             <h2>Personal Qualities</h2>
             <p>Motivated to learn and grow; responsible, stress-resistant, disciplined; strong team player.  
             Aimed at developing academically in computer science and machine learning through journal publications, conference reports, and further education.</p>
         </section>
-    </div>
+    </main>
 
-    <script>
-        const sections = document.querySelectorAll('.fade-in');
-        const navLinks = document.querySelectorAll('.nav a');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    navLinks.forEach(link => {
-                        link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
-                    });
-                }
-            });
-        }, { threshold: 0.3 });
-
-        sections.forEach(section => observer.observe(section));
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                document.querySelector(link.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <a href="#top" class="back-to-top">↑</a>
 </body>
 </html>
