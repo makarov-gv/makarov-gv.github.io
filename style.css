@@ -2,7 +2,6 @@
 
 body {
     margin: 0;
-    padding: 0;
     font-family: 'Inter', sans-serif;
     background-color: #121212;
     color: #e0e0e0;
@@ -13,34 +12,25 @@ body {
 a {
     color: #61dafb;
     text-decoration: none;
-    transition: color 0.2s, border-bottom 0.2s;
+    transition: color 0.2s, transform 0.2s;
 }
 
 a:hover {
     color: #21a1f1;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+    transform: translateY(-1px);
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    margin-bottom: 2rem;
+    padding: 2rem 1rem;
 }
 
 header img {
     width: 160px;
     height: 160px;
     border-radius: 12px;
-    object-fit: cover;
-    margin-bottom: 1rem;
     border: 3px solid #61dafb;
+    margin-bottom: 1rem;
     transition: transform 0.3s;
 }
 
@@ -48,14 +38,21 @@ header img:hover {
     transform: scale(1.05);
 }
 
-header h1 {
-    margin: 0.3rem 0;
-    font-size: 2.2rem;
-    font-weight: 700;
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #61dafb;
+    animation: typing 2.5s steps(20) 1 forwards, blink 0.7s step-end infinite alternate;
 }
 
-header p {
-    margin: 0.2rem 0;
+@keyframes typing {
+    from { width: 0; }
+    to { width: 11ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
 }
 
 .nav {
@@ -68,14 +65,17 @@ header p {
     position: relative;
 }
 
-.nav a.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
+.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
     height: 2px;
-    background-color: #61dafb;
+    background: #61dafb;
+    transition: width 0.3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
 }
 
 hr {
@@ -84,22 +84,20 @@ hr {
     margin: 2rem 0;
 }
 
-section {
-    margin-bottom: 2.5rem;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    padding: 1rem;
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.section {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
     border-radius: 12px;
+    scroll-snap-align: start;
     transition: transform 0.3s, background-color 0.3s;
 }
 
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.section-hover:hover {
+.section:hover {
     transform: translateY(-5px);
     background-color: rgba(255,255,255,0.03);
 }
@@ -107,13 +105,12 @@ section.visible {
 h2 {
     font-size: 1.6rem;
     border-bottom: 2px solid #333;
-    padding-bottom: 0.3rem;
     margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.2rem;
-    margin-top: 1.2rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: #ffffff;
 }
@@ -121,11 +118,14 @@ h3 {
 .job-period {
     font-style: italic;
     color: #aaa;
-    font-weight: 400;
 }
 
 ul {
     padding-left: 1.2rem;
+}
+
+.skills {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .achievements {
@@ -134,22 +134,25 @@ ul {
     color: #bbb;
 }
 
-.skills {
-    font-family: 'Roboto Mono', monospace;
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #61dafb;
+    color: #121212;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
 }
 
-@media(max-width: 600px) {
-    header img {
-        width: 120px;
-        height: 120px;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    .nav a {
-        display: block;
-        margin: 0.4rem 0;
-    }
+.back-to-top:hover {
+    transform: translateY(-3px);
+    background: #21a1f1;
 }
+
+.social-sidebar {
+    position: fixed;
+    left: 10px;
+   
